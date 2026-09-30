@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline';">
+    
+    <title>المصمم يوسف الساعي | مطور ومصمم واجهات الويب الآمنة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- زرار الواتساب العائم -->
+    <a href="https://wa.me/201040807496" class="float-whatsapp" target="_blank" title="تواصل عبر الواتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- مؤشر الماوس البرمجي </> -->
+    <div class="cursor-code" id="cursorCode">&lt;/&gt;</div>
+
+    <!-- الهيدر / القائمة العلوية -->
+    <header>
+        <div class="logo">المهندس يوسف <span>الساعي</span></div>
+        <nav>
+            <a href="#about">عني</a>
+            <a href="#projects">أعمالي</a>
+            <a href="#portfolio-gallery">معرض الأعمال</a>
+            <a href="#testimonials">آراء العملاء</a>
+            <a href="#why-me">لماذا أنا؟</a>
+            <a href="#secure-demo">نموذج حماية</a>
+            <a href="#contact" class="btn-contact">اتصل بي</a>
+            <button class="theme-toggle" id="themeToggle" title="تغيير المظهر"><i class="fas fa-moon" id="themeIcon"></i></button>
+        </nav>
+    </header>
+
+   <!-- القسم الرئيسي (Hero) مع فيديو الخلفية الكامل -->
+<section class="hero" id="about">
+    <video autoplay muted loop playsinline class="full-hero-video-bg">
+        <source src="coding-bg.mp4" type="video/mp4">
+        متصفحك لا يدعم عرض الفيديو.
+    </video>
+    <div class="full-video-overlay"></div>
+
+    <div class="hero-content" style="position: relative; z-index: 3;">
+        <div class="profile-container-3d">
+            <img src="my-photo.jpg" alt="المصمم يوسف الساعي" onerror="this.src='https://via.placeholder.com/180/0f172a/38bdf8?text=Yousef'" class="profile-img">
+        </div>
+        
+        <h1>أهلاً بك، أنا <span class="highlight">المهندس يوسف الساعي</span></h1>
+        <p>أهلاً بك. أنا طالب حاسبات ومطور واجهات ويب. بختصر عليك المسافة وأحول فكرة مشروعك أو متجرك إلى موقع سريع، شكله شيك، وآمن يحبه عملائك ويجيب لك نتائج حقيقية. خليني أساعدك تطلع بأفضل شكل ممكن على الإنترنت!</p>
+        <a href="#projects" class="cta-btn">تصفح أعمالي الآن</a>
+    </div>
+</section>
+
+    <!-- قسم شريط التقنيات والمهارات المتحرك -->
+<div class="tech-marquee-container">
+    <div class="tech-track">
+        <div class="tech-item"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="tech-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="tech-item"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="tech-item"><i class="fas fa-code"></i> VS Code</div>
+        <div class="tech-item"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+        <div class="tech-item"><i class="fas fa-laptop-code"></i> Frontend Dev</div>
+        <div class="tech-item"><i class="fas fa-paint-brush"></i> UI/UX Design</div>
+        
+        <div class="tech-item"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="tech-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="tech-item"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="tech-item"><i class="fas fa-code"></i> VS Code</div>
+        <div class="tech-item"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+        <div class="tech-item"><i class="fas fa-laptop-code"></i> Frontend Dev</div>
+        <div class="tech-item"><i class="fas fa-paint-brush"></i> UI/UX Design</div>
+    </div>
+</div>
+
+    <!-- قسم المشاريع والأعمال المحدث -->
+    <section id="projects" class="projects">
+        <h2 class="reveal">أبرز مشاريعي ونماذج العمل المتاحة</h2>
+        <div class="projects-grid">
+            
+            <!-- المشروع الأول: صفحة المنيو والتقارير (متاح للمعاينة والطلب) -->
+            <div class="project-card reveal">
+                <div class="card-icon"><i class="fas fa-utensils"></i></div>
+                <h3>صفحة هبوط المتاجر والمنيو التفاعلي</h3>
+                <p>عرض تفاعلي لصفحة المنيو والمتاجر بتصميم عصري وأداء فائق السرعة وجاهز للربط.</p>
+                <span class="tag">متجرك الإلكتروني / المنيو</span>
+                <div class="project-links-box" style="margin-top: 20px; display: flex; gap: 10px;">
+                    <a href="menu.html" target="_blank" style="flex: 1; text-align: center; background: var(--accent); color: var(--bg-color); padding: 8px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem;">عرض المنيو <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#contact" style="flex: 1; text-align: center; background: transparent; border: 1px solid var(--accent); color: var(--text-color); padding: 8px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem;">طلب مشابه 💬</a>
+                </div>
+            </div>
+
+            <!-- المشروع الثاني: نظام تسجيل مستخدمين (ستتوفر قريباً مع العداد) -->
+            <div class="project-card reveal">
+                <div class="card-icon"><i class="fas fa-user-shield"></i></div>
+                <h3>نظام تسجيل مستخدمين محصن</h3>
+                <p>صفحة تسجيل دخول وحسابات مع تطبيق معايير التحقق من المدخلات ومنع الثغرات البرمجية.</p>
+                <span class="tag" style="background: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid #ef4444;">ستتوفر قريباً ⏳</span>
+                
+                <div class="countdown-timer" style="display: flex; gap: 8px; justify-content: center; margin-top: 15px; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 8px;">
+                    <div style="text-align: center;"><span id="days2" style="font-weight: bold; color: var(--accent);">12</span><br><small style="font-size: 0.7rem;">يوم</small></div> :
+                    <div style="text-align: center;"><span id="hours2" style="font-weight: bold; color: var(--accent);">08</span><br><small style="font-size: 0.7rem;">ساعة</small></div> :
+                    <div style="text-align: center;"><span id="mins2" style="font-weight: bold; color: var(--accent);">45</span><br><small style="font-size: 0.7rem;">دقيقة</small></div> :
+                    <div style="text-align: center;"><span id="secs2" style="font-weight: bold; color: var(--accent);">30</span><br><small style="font-size: 0.7rem;">ثانية</small></div>
+                </div>
+            </div>
+
+            <!-- المشروع الثالث: رسوميات 3D (ستتوفر قريباً مع العداد) -->
+            <div class="project-card reveal">
+                <div class="card-icon"><i class="fas fa-cube"></i></div>
+                <h3>رسوميات وتأثيرات تفاعلية 3D</h3>
+                <p>تطوير واجهات تفاعلية تدعم الجسيمات المتحركة والرسوميات الثلاثية لإبهار الزوار.</p>
+                <span class="tag" style="background: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid #ef4444;">ستتوفر قريباً ⏳</span>
+                
+                <div class="countdown-timer" style="display: flex; gap: 8px; justify-content: center; margin-top: 15px; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 8px;">
+                    <div style="text-align: center;"><span id="days3" style="font-weight: bold; color: var(--accent);">20</span><br><small style="font-size: 0.7rem;">يوم</small></div> :
+                    <div style="text-align: center;"><span id="hours3" style="font-weight: bold; color: var(--accent);">14</span><br><small style="font-size: 0.7rem;">ساعة</small></div> :
+                    <div style="text-align: center;"><span id="mins3" style="font-weight: bold; color: var(--accent);">10</span><br><small style="font-size: 0.7rem;">دقيقة</small></div> :
+                    <div style="text-align: center;"><span id="secs3" style="font-weight: bold; color: var(--accent);">55</span><br><small style="font-size: 0.7rem;">ثانية</small></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- قسم معرض الأعمال المطور -->
+    <section id="portfolio-gallery" class="portfolio-section">
+        <h2 class="reveal">معرض الأعمال والمشاريع المطورة</h2>
+        <div class="portfolio-grid reveal">
+            <div class="portfolio-item">
+                <h3>موقع الستائر والانتريهات والـ 3D</h3>
+                <p>تطوير واجهات تفاعلية متقدمة وتصميمات بصرية ساحرة باستخدام Three.js و HTML/CSS/JS[cite: 1].</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>أنظمة الإدارة والبحث المخصصة</h3>
+                <p>تطوير أنظمة ويب متكاملة لتسجيل المستخدمين وإدارة العملاء بكفاءة عالية[cite: 1].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم آراء وتقييمات العملاء -->
+    <section id="testimonials" class="testimonials-section">
+        <h2 class="reveal">آراء العملاء المميزين وتقييماتهم</h2>
+        
+        <div class="testimonials-container reveal" id="testimonialsContainer">
+            <div class="testimonial-card">
+                <i class="fas fa-quote-right card-icon"></i>
+                <p>"شغل احترافي جداً وتصميم الـ 3D أبهرني وأبهر شركائي، الاستجابة سريعة والدقة عالية. شكراً لك!"[cite: 1]</p>
+                <h3>عميل مميز</h3>
+                <span class="tag">دفع 15,000 ديبوزت</span>[cite: 1]
+                <div class="bot-reply" style="margin-top: 15px; background: rgba(56, 189, 248, 0.1); border-right: 3px solid var(--accent); padding: 10px; border-radius: 6px; font-size: 0.9rem;">
+                    <strong>🤖 رد المطور (يوسف):</strong> يسعدني جداً يا فندم أن العمل نال إعجابك وإعجاب الشركاء! دائماً في الخدمة 🚀[cite: 1]
+                </div>
+            </div>
+        </div>
+
+        <div class="add-testimonial-box reveal" style="max-width: 600px; margin: 50px auto 0 auto; background: var(--card-bg); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color);">
+            <h3 style="margin-bottom: 20px; color: var(--accent); text-align: center;"><i class="fas fa-pen-nib"></i> أضف تقييمك أو رأيك معنا</h3>
+            <form id="testimonialForm" onsubmit="addNewTestimonial(event)">
+                <input type="text" id="clientName" placeholder="اسمك الكريم أو صفتك..." required style="width: 100%; padding: 12px; background: var(--section-bg-alt); border: 1px solid var(--border-color); border-radius: 8px; color: var(--text-color); margin-bottom: 15px; outline: none;">
+                <input type="text" id="clientJob" placeholder="وصفك أو طبيعة مشروعك (مثلاً: صاحب مشروع)..." required style="width: 100%; padding: 12px; background: var(--section-bg-alt); border: 1px solid var(--border-color); border-radius: 8px; color: var(--text-color); margin-bottom: 15px; outline: none;">
+                <textarea id="clientFeedback" placeholder="اكتب رأيك بكل شفافية عن الشغل والتجربة..." required style="width: 100%; padding: 12px; background: var(--section-bg-alt); border: 1px solid var(--border-color); border-radius: 8px; color: var(--text-color); margin-bottom: 15px; height: 100px; resize: vertical; outline: none;"></textarea>
+                <button type="submit" style="background: var(--accent); color: var(--bg-color); border: none; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; transition: 0.3s;">نشر التقييم في الموقع 🌟</button>
+                <div id="reviewSuccess" style="margin-top: 10px; text-align: center; font-size: 0.95rem; display: none;"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- قسم لماذا تختارني -->
+    <section id="why-me" class="why-section">
+        <h2 class="reveal">لماذا تختارني للعمل على مشروعك؟</h2>
+        <div class="why-grid">
+            <div class="why-card reveal">
+                <i class="fas fa-bolt"></i>
+                <h3>سرعة وأداء عالي</h3>
+                <p>مواقع خفيفة وسريعة التحميل لضمان عدم خروج أي عميل محتمل.</p>
+            </div>
+            <div class="why-card reveal">
+                <i class="fas fa-shield-alt"></i>
+                <h3>معايير حماية وأمان</h3>
+                <p>بصفتي دارساً للحاسبات، أحرص على خلو الواجهات من الثغرات وحماية البيانات.</p>
+            </div>
+            <div class="why-card reveal">
+                <i class="fas fa-handshake"></i>
+                <h3>دعم وتواصل مستمر</h3>
+                <p>أتابع معك خطوة بخطوة حتى يخرج المشروع بالشكل الذي يرضيك تماماً.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم نموذج حماية المدخلات -->
+    <section id="secure-demo" class="secure-section">
+        <h2 class="reveal">اختبار حماية المدخلات (Security Sandbox)</h2>
+        <p class="reveal">نموذج برمجي مصغر يوضح للعملاء كيف يتم تطهير وتحييد الأكواد الخبيثة:</p>
+        <div class="secure-box reveal">
+            <input type="text" id="userInput" placeholder="اكتب نصاً تجريبياً هنا...">
+            <button onclick="sanitizeAndDisplay()">فحص وتأمين المدخلات</button>
+            <div id="outputResult" class="output-box"></div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل ونموذج الرسائل -->
+    <section id="contact" class="contact">
+        <h2 class="reveal">عندك فكرة مشروع ومش عارف تبدأ منين؟</h2>
+        <p class="reveal">ابعت لي بيانات مشروعك من النموذج أدناه وسنتكلم فوراً عبر الواتساب!</p>
+        
+        <div class="contact-form-box reveal">
+            <form id="contactForm" onsubmit="submitContactForm(event)">
+                <input type="text" id="senderName" placeholder="اسمك الكريم..." required>
+                <input type="tel" id="senderPhone" placeholder="رقم الهاتف للتواصل..." required>
+                <input type="text" id="projectType" placeholder="مشروعك عبارة عن إيه؟ (متجر، موقع شخصي...)" required>
+                <textarea id="senderMsg" placeholder="تفاصيل إضافية عن المشروع..." required></textarea>
+                <button type="submit">إرسال الرسالة عبر الواتساب 💬</button>
+                <div id="formSuccess" class="form-success-msg" style="display:none;"></div>
+            </form>
+        </div>
+
+        <div class="social-links reveal">
+            <a href="https://wa.me/201040807496" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> واتساب</a>
+            <a href="https://www.facebook.com/profile.php?id=100076459575274" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> فيسبوك</a>
+            <a href="https://www.instagram.com/_yovvvsf___/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> إنستجرام</a>
+            <a href="mailto:ywsfalsay927@gmail.com"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
+            <a href="tel:01025810474"><i class="fas fa-phone"></i> اتصال مباشر</a>
+            <a href="https://maps.google.com/?q=Egypt" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> العنوان: مصر</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - المصمم يوسف الساعي[cite: 1]</p>
+    </footer>
+
+    <!-- زر العودة إلى الأعلى -->
+    <div class="scroll-top-btn" id="scrollTopBtn" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></div>
+
+    <script>
+        /* 1. مؤشر الماوس البرمجي </> */
+        const cursorCode = document.getElementById('cursorCode');
+        window.addEventListener('mousemove', (e) => {
+            cursorCode.style.left = `${e.clientX + 12}px`;
+            cursorCode.style.top = `${e.clientY + 12}px`;
+        });
+
+        /* 2. الوضع الليلي والنهاري (Dark/Light Mode) */
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        
+        themeToggle.addEventListener('click', () => {
+            if (document.documentElement.getAttribute('data-theme') === 'light') {
+                document.documentElement.removeAttribute('data-theme');
+                themeIcon.className = 'fas fa-moon';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                themeIcon.className = 'fas fa-sun';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+            themeIcon.className = 'fas fa-sun';
+        }
+
+        /* 3. تأثيرات الظهور عند التمرير وزر العودة للاعلى */
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            let reveals = document.querySelectorAll('.reveal');
+            for(let i = 0; i < reveals.length; i++) {
+                let windowHeight = window.innerHeight;
+                let elementTop = reveals[i].getBoundingClientRect().top;
+                if(elementTop < windowHeight - 100) {
+                    reveals[i].classList.add('active');
+                }
+            }
+
+            if (window.scrollY > 400) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        /* تشغيل العداد التنازلي للمشاريع القادمة */
+        setInterval(() => {
+            let s2 = document.getElementById('secs2');
+            if(s2) {
+                let currentSec = parseInt(s2.innerText);
+                currentSec = currentSec > 0 ? currentSec - 1 : 59;
+                s2.innerText = currentSec < 10 ? '0' + currentSec : currentSec;
+            }
+
+            let s3 = document.getElementById('secs3');
+            if(s3) {
+                let currentSec3 = parseInt(s3.innerText);
+                currentSec3 = currentSec3 > 0 ? currentSec3 - 1 : 59;
+                s3.innerText = currentSec3 < 10 ? '0' + currentSec3 : currentSec3;
+            }
+        }, 1000);
+
+        /* 4. نموذج حماية المدخلات */
+        function sanitizeAndDisplay() {
+            let rawInput = document.getElementById('userInput').value;
+            let outputBox = document.getElementById('outputResult');
+            let sanitized = rawInput.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+            
+            if(sanitized.trim() === "") {
+                outputBox.innerHTML = "<span style='color: #ef4444;'>الرجاء إدخال نص صالح للفحص!</span>";
+            } else {
+                outputBox.innerHTML = "<span style='color: #10b981;'>تمت تنقية وتحييد المدخلات بنجاح:</span> " + sanitized;
+            }
+        }
+
+        /* 5. نظام إدارة التقييمات مع الحفظ الدائم والبوت الآلي */
+        document.addEventListener("DOMContentLoaded", loadSavedTestimonials);
+
+        function addNewTestimonial(event) {
+            event.preventDefault();
+            let name = document.getElementById('clientName').value.trim();
+            let job = document.getElementById('clientJob').value.trim();
+            let feedback = document.getElementById('clientFeedback').value.trim();
+            let successMsg = document.getElementById('reviewSuccess');
+
+            if(name === "" || job === "" || feedback === "") {
+                successMsg.style.display = 'block';
+                successMsg.innerHTML = "<span style='color: #ef4444;'>الرجاء تعبئة جميع الحقول!</span>";
+                return;
+            }
+
+            let lowerText = feedback.toLowerCase();
+            let botReplyText = "";
+            
+            if (lowerText.includes('سيء') || lowerText.includes('مشكلة') || lowerText.includes('بطيء') || lowerText.includes('خطأ') || lowerText.includes('لا يعمل') || lowerText.includes('غالي')) {
+                botReplyText = "أهلاً بك يا فندم، نعتذر لو واجهتك أي تجربة غير مقبولة. يسعدنا جداً تواصلك معنا عبر الواتساب لحل أي مشكلة فوراً وإرضائك بالكامل! 🤝";
+            } else {
+                botReplyText = "شكراً لكلماتك الرائعة ولسثقتك الغالية! سعدنا جداً بخدمتك ونتطلع دائماً لتقديم الأفضل لك 🌟🚀";
+            }
+
+            let reviewData = { name, job, feedback, botReply: botReplyText };
+            
+            let savedReviews = JSON.parse(localStorage.getItem('myPortfolioReviews')) || [];
+            savedReviews.push(reviewData);
+            localStorage.setItem('myPortfolioReviews', JSON.stringify(savedReviews));
+
+            appendReviewToDOM(reviewData);
+
+            successMsg.style.display = 'block';
+            successMsg.innerHTML = "<span style='color: #10b981;'>شكراً لك! تم نشر تقييمك ورد البوت عليه بنجاح 🌟</span>";
+            
+            document.getElementById('testimonialForm').reset();
+            setTimeout(() => {
+                successMsg.style.display = 'none';
+            }, 3000);
+        }
+
+        function appendReviewToDOM(data) {
+            let container = document.getElementById('testimonialsContainer');
+            let newCard = document.createElement('div');
+            newCard.className = 'testimonial-card';
+            newCard.innerHTML = `
+                <i class="fas fa-quote-right card-icon"></i>
+                <p>"${data.feedback}"</p>
+                <h3>${data.name}</h3>
+                <span class="tag">${data.job}</span>
+                <div class="bot-reply" style="margin-top: 15px; background: rgba(56, 189, 248, 0.1); border-right: 3px solid var(--accent); padding: 10px; border-radius: 6px; font-size: 0.9rem;">
+                    <strong>🤖 رد المطور (يوسف):</strong> ${data.botReply}
+                </div>
+            `;
+            container.appendChild(newCard);
+        }
+
+        function loadSavedTestimonials() {
+            let savedReviews = JSON.parse(localStorage.getItem('myPortfolioReviews')) || [];
+            savedReviews.forEach(review => {
+                appendReviewToDOM(review);
+            });
+        }
+
+        async function submitContactForm(event) {
+            event.preventDefault();
+            
+            let name = document.getElementById('senderName').value.trim();
+            let phone = document.getElementById('senderPhone').value.trim();
+            let projType = document.getElementById('projectType').value.trim();
+            let msg = document.getElementById('senderMsg').value.trim();
+            let successBox = document.getElementById('formSuccess');
+
+            if(name === "" || phone === "" || projType === "" || msg === "") {
+                successBox.style.display = 'block';
+                successBox.innerHTML = `<span style='color: #ef4444; font-weight: bold;'>الرجاء ملء جميع الحقول المطلوبة!</span>`;
+                return;
+            }
+
+            successBox.style.display = 'block';
+            successBox.innerHTML = `<span style='color: #38bdf8; font-weight: bold;'>جاري حفظ بياناتك في قاعدة البيانات وتحويلك للواتساب يا ${name}... 🚀</span>`;
+
+            try {
+                let response = await fetch('http://localhost:3000/api/clients', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        phone: phone,
+                        fabricType: projType,
+                        notes: msg
+                    })
+                });
+
+                let result = await response.json();
+                console.log('استجابة السيرفر:', result);
+
+            } catch (error) {
+                console.log('ملاحظة: السيرفر المحلي غير متصل حالياً.', error);
+            }
+
+            let whatsappNumber = "201040807496"; 
+            let text = `مرحباً يوسف، أريد الاستفسار عن عمل مشروع جديد.%0a%0a` +
+                       `👤 الاسم: ${encodeURIComponent(name)}%0a` +
+                       `📞 الهاتف: ${encodeURIComponent(phone)}%0a` +
+                       `💡 فكرة المشروع: ${encodeURIComponent(projType)}%0a` +
+                       `💬 التفاصيل: ${encodeURIComponent(msg)}`;
+
+            setTimeout(() => {
+                window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+                document.getElementById('contactForm').reset();
+                successBox.style.display = 'none';
+            }, 1200);
+        }
+    </script>
+</body>
+</html>
